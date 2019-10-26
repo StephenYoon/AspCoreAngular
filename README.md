@@ -1,13 +1,13 @@
 # ASP.NET Core Razor with Angular
 Testing grounds in adding an Angular app to an existing AspCore Razor web application.  
 
-Motivation comes from augmenting an existing ASP.NET Razor web application. These are great for getting a web application up and running quickly. However, for the client-side, it relies by default on jQuery in order to enable some interactive features and also improve the user’s overall experience.
+Motivation comes from augmenting an existing ASP.NET Razor web application. These are great for getting a web application up and running quickly. However, for the client-side, it relies on jQuery in order to enable some interactive features and also improve the user’s overall experience.
   
-jQuery has been playing a major role in the development of web applications over the past years, mostly because it is quick to learn and  it supports a consistent syntax across different browsers. The problem is that jQuery code is difficult to test, hard to extend, and most importantly, hard to maintain.  Scaling the frontend, maintenance and quality quickly becomes a concern.
+jQuery has been playing a major role in the development of web applications over the past years, mostly because it supports a consistent syntax across different browsers. The problem is that jQuery code is difficult to test, hard to extend, and most importantly, hard to maintain.  Scaling the frontend, maintenance and quality quickly becomes a concern.
   
 In comes Angular. An opensource JavaScript framework designed for building scalable and dynamic web applications. Angular uses pure HTML as its template language, but allows us to extend HTML’s syntax and combine it with functionality in order to build higher-level components.
 
-It supports patterns such as dependency injection (DI) and data binding, which eliminate the need for much of the code we otherwise have to write, and enable us to write automated tests for our applications, or even practice test-driven development (TDD).
+Among many things, it supports patterns such as dependency injection (DI) and data binding, which eliminate the need for much of the code we would have to write.
   
 ## Prerequisites:
 - ensure you have node.js installed (https://nodejs.org/en/)
@@ -25,7 +25,7 @@ It supports patterns such as dependency injection (DI) and data binding, which e
   
 ## Steps:
 1. Create a new ASP.NET Core Web Application / Web Application (not MVC, just plain vanilla Web Application using Razor).
-2. Navigate out of your project directory and then create your angular app with your project folder name `ng new <your root project folder name>`. This create the Angular application within the root of the ASP.NET Core project folder.
+2. Navigate out of your project directory and then create your angular app with your project folder name `ng new <your root project folder name>`. This creates the Angular application within the root of the ASP.NET Core project folder.
     - This is to align the package.json and other Angular files with the ASP.NET config files.
 3. Update the angular.json file
     ```json
