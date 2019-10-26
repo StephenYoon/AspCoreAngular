@@ -1,5 +1,6 @@
 # AspCoreAngular
 Testing grounds in adding an Angular app to an existing AspCore Razor web application.  
+
 Motivation comes from working an existing web applications that have been established patterns. Although great for getting a web application up quickly, as it scales lack of separation of concerns becomes a conern. For the client-side, it relies by default on jQuery, in order to enable some interactive features and also improve the user’s overall experience.
   
 It’s true that jQuery has been playing a major role in the development of web applications over the past years, mostly because it is easy to learn, plus it supports a consistent syntax across different browsers. The problem is that jQuery code is very difficult to test, hard to extend, and most importantly, hard to maintain.  This adds quality to your list of concerns.
@@ -69,3 +70,6 @@ Moreover, it supports patterns such as dependency injection (DI) and data bindin
 
     <app-root></app-root>
     ```
+  
+## Reference
+https://www.mithunvp.com/angular-asp-net-mvc-5-angular-cli-visual-studio-2017/
