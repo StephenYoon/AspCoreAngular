@@ -13,7 +13,7 @@ Among many things, it supports patterns such as dependency injection (DI) and da
 - ensure you have node.js installed (https://nodejs.org/en/)
 - ensure you have Angular installed (in command prompt run this statement: npm install -g @angular/cli)
 
-## Demo:
+## Demo of Changes and App
 ![](aspcore-angular8-demo.gif)
 
 ## Notes:
