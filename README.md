@@ -43,14 +43,29 @@ Moreover, it supports patterns such as dependency injection (DI) and data bindin
       ...
     }
     ```
-5. Update _Layout.cshtml  
-    Near the top in the <head> section add `<base href="/">`
+5. Update Pages/Shared/_Layout.cshtml  
+    Near the top within the `<head>` section add `<base href="/">`
 
-    Near the bottom, just before `@RenderSection("Scripts", required: false)`
+    Near the bottom, just before `@RenderSection("Scripts", required: false)` add your angular scripts:
     ```html
+    <script src="~/dist/runtime-es5.js" asp-append-version="true"></script>
+    <script src="~/dist/polyfills-es5.js" asp-append-version="true"></script>
+    <script src="~/dist/styles-es5.js" asp-append-version="true"></script>
+    <script src="~/dist/vendor-es5.js" asp-append-version="true"></script>
+    <script src="~/dist/main-es5.js" asp-append-version="true"></script>
+
     <script src="~/dist/runtime-es2015.js" asp-append-version="true"></script>
     <script src="~/dist/polyfills-es2015.js" asp-append-version="true"></script>
     <script src="~/dist/styles-es2015.js" asp-append-version="true"></script>
     <script src="~/dist/vendor-es2015.js" asp-append-version="true"></script>
     <script src="~/dist/main-es2015.js" asp-append-version="true"></script>
+    ```
+6. Add a new Razor Page and reference your root angular component in the newly created cshtml with `<app-root></app-root>`. For example:
+    ```razor
+    @page
+    @model AspCoreAngular.Pages.SpaModel
+    @{
+    }
+
+    <app-root></app-root>
     ```
