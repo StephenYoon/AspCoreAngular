@@ -25,7 +25,7 @@ It supports patterns such as dependency injection (DI) and data binding, which e
   
 ## Steps:
 1. Create a new ASP.NET Core Web Application / Web Application (not MVC, just plain vanilla Web Application using Razor).
-2. `ng new ClientApp` to create the Angular application within the root of the ASP.NET Core project folder.
+2. Navigate out of your project directory and then create your angular app with your project folder name `ng new <your root project folder name>`. This create the Angular application within the root of the ASP.NET Core project folder.
     - This is to align the package.json and other Angular files with the ASP.NET config files.
 3. Update the angular.json file
     ```json
