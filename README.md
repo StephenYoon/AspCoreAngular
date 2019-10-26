@@ -1,9 +1,9 @@
 # ASP.NET Core Razor with Angular
-Testing grounds in adding an Angular app to an existing AspCore Razor web application.  
+Testing grounds for adding an Angular app to an existing AspCore Razor web application.  
 
 Motivation comes from augmenting an existing ASP.NET Razor web application. These are great for getting a web application up and running quickly. However, for the client-side, it relies on jQuery in order to enable some interactive features and also improve the user’s overall experience.
   
-jQuery has been playing a major role in the development of web applications over the past years, mostly because it supports a consistent syntax across different browsers. The problem is that jQuery code is difficult to test, hard to extend, and most importantly, hard to maintain.  Scaling the frontend, maintenance and quality quickly becomes a concern.
+jQuery has been played a major role in the development of web applications over the past years, mostly because it supports a consistent syntax across different browsers. The problem is that jQuery code is difficult to test, hard to extend, and most importantly, hard to maintain. Scaling the frontend, maintenance and quality will quickly become a concern.
   
 In comes Angular. An opensource JavaScript framework designed for building scalable and dynamic web applications. Angular uses pure HTML as its template language, but allows us to extend HTML’s syntax and combine it with functionality in order to build higher-level components.
 
@@ -11,7 +11,7 @@ Among many things, it supports patterns such as dependency injection (DI) and da
   
 ## Prerequisites:
 - ensure you have node.js installed (https://nodejs.org/en/)
-- ensure you have Angular installed (in command prompt run this statement: npm install -g @angular/cli)
+- ensure you have Angular installed (in command prompt run this statement: `npm install -g @angular/cli`)
 
 ## Demo of Changes and App
 To run this locally, clone this repo, run the `npm install` and `ng build` command from within the project root folder (where the package.json file is located) and then hit F5 from Visual Studio 2019.
@@ -25,11 +25,11 @@ To run this locally, clone this repo, run the `npm install` and `ng build` comma
 **tsconfig.json** - configuration file must for all TypeScript files to transpile to JavaScript.  
 **node_modules** - folder containing all downloaded node modules. This folder is always large, ensure you git ignore this.  
   
-## Steps:
+## Steps to Re-create:
 1. Create a new ASP.NET Core Web Application / Web Application (not MVC, just plain vanilla Web Application using Razor).
 2. Navigate out of your project directory and then create your angular app with your project folder name `ng new <your root project folder name>`. This creates the Angular application within the root of the ASP.NET Core project folder.
     - This is to align the package.json and other Angular files with the ASP.NET config files.
-3. Update the angular.json file
+3. Update the angular.json file to specify where the Angular build files will be placed:
     ```json
     "options": {
       "outputPath": "./wwwroot/dist",
