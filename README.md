@@ -14,7 +14,7 @@ Among many things, it supports patterns such as dependency injection (DI) and da
 - ensure you have Angular installed (in command prompt run this statement: npm install -g @angular/cli)
 
 ## Demo of Changes and App
-To run this locally, clone this repo, run the 'npm install` and `ng build` command from within the project root folder (where the package.json file is located) and then hit F5 from Visual Studio 2019.
+To run this locally, clone this repo, run the `npm install` and `ng build` command from within the project root folder (where the package.json file is located) and then hit F5 from Visual Studio 2019.
   
 ![](aspcore-angular8-demo.gif)
 
