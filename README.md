@@ -1,17 +1,20 @@
 # AspCoreAngular
 Testing grounds in adding an Angular app to an existing AspCore Razor web application.  
 
-Motivation comes from working an existing web applications that have been established patterns. Although great for getting a web application up quickly, as it scales lack of separation of concerns becomes a conern. For the client-side, it relies by default on jQuery, in order to enable some interactive features and also improve the user’s overall experience.
+Motivation comes from augmenting an existing ASP.NET Razor web application. These are great for getting a web application up and running quickly. However, for the client-side, it relies by default on jQuery in order to enable some interactive features and also improve the user’s overall experience.
   
-It’s true that jQuery has been playing a major role in the development of web applications over the past years, mostly because it is easy to learn, plus it supports a consistent syntax across different browsers. The problem is that jQuery code is very difficult to test, hard to extend, and most importantly, hard to maintain.  This adds quality to your list of concerns.
+jQuery has been playing a major role in the development of web applications over the past years, mostly because it is quick to learn and  it supports a consistent syntax across different browsers. The problem is that jQuery code is difficult to test, hard to extend, and most importantly, hard to maintain.  Scaling the frontend, maintenance and quality quickly becomes a concern.
   
-In comes Angular. Angular is a opensource JavaScript framework designed for building scalable and dynamic web applications. Angular uses pure HTML as its template language, but allows us to extend HTML’s syntax and combine it with functionality in order to build higher-level components.
+In comes Angular. An opensource JavaScript framework designed for building scalable and dynamic web applications. Angular uses pure HTML as its template language, but allows us to extend HTML’s syntax and combine it with functionality in order to build higher-level components.
 
-Moreover, it supports patterns such as dependency injection (DI) and data binding, which eliminate the need for much of the code we otherwise have to write, and enable us to write automated tests for our applications, or even practice test-driven development (TDD).
+It supports patterns such as dependency injection (DI) and data binding, which eliminate the need for much of the code we otherwise have to write, and enable us to write automated tests for our applications, or even practice test-driven development (TDD).
   
 ## Prerequisites:
 - ensure you have node.js installed (https://nodejs.org/en/)
 - ensure you have Angular installed (in command prompt run this statement: npm install -g @angular/cli)
+
+## Demo:
+![](aspcore-angular8-demo.gif)
 
 ## Notes:
 **Src** folder - This is actual source folder of the Angular application, entire project structure is present in this folder.  
@@ -70,6 +73,6 @@ Moreover, it supports patterns such as dependency injection (DI) and data bindin
 
     <app-root></app-root>
     ```
-  
+
 ## Reference
 https://www.mithunvp.com/angular-asp-net-mvc-5-angular-cli-visual-studio-2017/
