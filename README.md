@@ -16,7 +16,9 @@ Among many things, it supports patterns such as dependency injection (DI) and da
 ## Demo of Changes and App
 To run this locally, clone this repo, run the `npm install` and `ng build` command from within the project root folder (where the package.json file is located) and then hit F5 from Visual Studio 2019.
   
-![](aspcore-angular8-demo.gif)
+![](aspcore-angular8-demo-short.gif)
+  
+[Click here to view demo with revisions made to newly created web application](aspcore-angular8-demo.gif)
 
 ## Notes:
 **Src** folder - This is actual source folder of the Angular application, entire project structure is present in this folder.  
