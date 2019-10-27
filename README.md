@@ -1,7 +1,7 @@
 # ASP.NET Core Razor with Angular
-Testing grounds for adding an Angular app to an existing AspCore Razor web application.  
+Testing grounds for adding an Angular app to an existing ASP.NET Core Razor web application.  
 
-Motivation comes from augmenting an existing ASP.NET Razor web application. These are great for getting a web application up and running quickly. However, for the client-side, it relies on jQuery in order to enable some interactive features and also improve the user’s overall experience.
+Motivation comes from augmenting an existing ASP.NET Core Razor web application. These are great for getting a web application up and running quickly. However, for the client-side, it relies on jQuery in order to enable some interactive features and also improve the user’s overall experience.
   
 jQuery has been played a major role in the development of web applications over the past years, mostly because it supports a consistent syntax across different browsers. The problem is that jQuery code is difficult to test, hard to extend, and most importantly, hard to maintain. Scaling the frontend, maintenance and quality will quickly become a concern.
   
