@@ -6,22 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\models\offer.ts" />
-    <None Remove="src\models\product.ts" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
-
-
-  <ItemGroup>
-    <TypeScriptCompile Include="src\models\offer.ts" />
-    <TypeScriptCompile Include="src\models\product.ts" />
-  </ItemGroup>
-
 
   <ItemGroup>
     <None Update="src\assets\images\logo.png">
