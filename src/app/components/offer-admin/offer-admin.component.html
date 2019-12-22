@@ -1,7 +1,15 @@
 <div class="offer-admin">
   <div class="offer-card">
     <mat-card-header>
-      <mat-card-title>Swedish/Aromatherapy Treatment</mat-card-title>
+      <mat-card-title class="w-100" [hidden]="isEditMode">
+        Swedish/Aromatherapy Treatment
+        <i class="fa fa-edit" (click)="editTitleClick()"></i>
+        <button type="button" class="btn btn-primary fa fa-edit" (click)="editTitleClick()"></button>
+      </mat-card-title>
+      <mat-form-field class="w-100" [hidden]="!isEditMode">
+        <input matInput placeholder="Favorite food" value="Sushi">
+        <i class="fa fa-check" (click)="editTitleClick()"></i>
+      </mat-form-field>
     </mat-card-header>
     <img mat-card-image src="./dist/assets/images/offer1.jpg">
     <mat-card-content>
@@ -11,17 +19,5 @@
     </mat-card-content>
   </div>
 
-  <div class="container">
-    <div class="row bg-info">
-      <div class="col bg-info text-white">
-        One of three columns
-      </div>
-      <div class="col bg-warning text-white">
-        One of three columns
-      </div>
-      <div class="col bg-info text-white">
-        One of three columns
-      </div>
-    </div>
-  </div>
+
 </div>
