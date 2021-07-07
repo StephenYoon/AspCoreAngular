@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferAdminComponent implements OnInit {
 
-  constructor() { }
+    public isEditMode: boolean = false;
 
-  ngOnInit() {
-  }
+    constructor() { }
 
+    ngOnInit() {
+    }
+
+    public editTitleClick() {
+        this.isEditMode = !this.isEditMode;
+    }
 }

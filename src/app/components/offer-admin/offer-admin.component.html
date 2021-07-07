@@ -1,1 +1,23 @@
-<p>offer-admin works!</p>
+<div class="offer-admin">
+  <div class="offer-card">
+    <mat-card-header>
+      <mat-card-title class="w-100" [hidden]="isEditMode">
+        Swedish/Aromatherapy Treatment
+        <i class="fa fa-edit" (click)="editTitleClick()"></i>
+        <button type="button" class="btn btn-primary fa fa-edit" (click)="editTitleClick()"></button>
+      </mat-card-title>
+      <mat-form-field class="w-100" [hidden]="!isEditMode">
+        <input matInput placeholder="Favorite food" value="Sushi">
+        <i class="fa fa-check" (click)="editTitleClick()"></i>
+      </mat-form-field>
+    </mat-card-header>
+    <img mat-card-image src="./dist/assets/images/offer1.jpg">
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatatnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </mat-card-content>
+  </div>
+
+
+</div>
